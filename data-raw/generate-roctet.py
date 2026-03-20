@@ -21,8 +21,8 @@
 from roctet import calc_roctet
 import polars as pl
 
-dfs_beta = calc_roctet(0.67, method="beta", n_sets=2, n_obsv=1e5)  
-dfs_pcws = calc_roctet(0.67, method="piecewise", n_sets=2, n_obsv=1e5)
+dfs_beta = calc_roctet(0.67, method="beta", n_sets=2, n_obsv=1e4)  
+dfs_pcws = calc_roctet(0.67, method="piecewise", n_sets=2, n_obsv=1e4)
 df = (
   pl.concat(dfs_beta+dfs_pcws)
     .with_columns(id = pl.col('id') + 1 + 2*(pl.col("method") == pl.lit('piecewise')))
