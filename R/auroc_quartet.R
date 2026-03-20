@@ -11,7 +11,7 @@
 #'
 #' @references Riederer E (2026). _roctet_: . Python package version 0.1.0. 
 #'
-#' @format A dataframe with 400,000 rows and 4 variables:
+#' @format A dataframe with 4,000 rows and 4 variables:
 #'
 #' * `id`: The data id number within each method
 #' * `method`: The data generating mechanism ("beta" or "piecewise")

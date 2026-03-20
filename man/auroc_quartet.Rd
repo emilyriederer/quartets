@@ -5,7 +5,7 @@
 \alias{auroc_quartet}
 \title{Area under the ROC Curve (AUROC) Quartet Data}
 \format{
-A dataframe with 400,000 rows and 4 variables:
+A dataframe with 4,000 rows and 4 variables:
 \itemize{
 \item \code{id}: The data id number within each method
 \item \code{method}: The data generating mechanism ("beta" or "piecewise")
